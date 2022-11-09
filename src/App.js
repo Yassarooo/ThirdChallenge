@@ -128,7 +128,7 @@ function App() {
                     fontSize: "larger",
                   }}
                 >
-                  Motion Graphics
+                  Photography
                 </p>
               </Container>
             </Container>
@@ -159,13 +159,13 @@ function App() {
           <Container className="d-flex">
             <img src={require("./pp.png")} alt="" />
           </Container>
-          <Container className="d-flex">
+          <Container className="d-flex py-3">
             <Stack>
               <h1 style={{ fontWeight: 700 }}>
                 I'm Amy,and I'd love to work on your next project
               </h1>
               <p
-                className="mt-5"
+                className="mt-4"
                 style={{ fontSize: 1.1 + `em`, opacity: 0.5, fontWeight: 500 }}
               >
                 I love working with others to create beautiful design solutions.
@@ -192,7 +192,7 @@ function App() {
             My Work
           </h1>
         </Container>
-        <Container className="w-50">
+        <Container className="w-50 mt-3">
           <Carousel>
             <Carousel.Item>
               <img
@@ -210,7 +210,7 @@ function App() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Second slide&bg=282c34"
+                src={require("./pp.png")}
                 alt="Second slide"
               />
 
@@ -222,7 +222,7 @@ function App() {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="holder.js/800x400?text=Third slide&bg=20232a"
+                src={require("./pp.png")}
                 alt="Third slide"
               />
 
