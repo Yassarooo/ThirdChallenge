@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircle } from "@fortawesome/fontawesome-free-regular";
 import { Button, Container, Navbar, Col, Stack } from "react-bootstrap";
-import Carousel from "react-bootstrap/Carousel";
+import Carousel, { CarouselItem } from "./Carousel";
 
 function App() {
   return (
@@ -192,49 +192,83 @@ function App() {
             My Work
           </h1>
         </Container>
-        <Container className="w-50 mt-3">
+        <div
+          style={{
+            maxWidth: 2200,
+            marginTop: 30,
+            height: 400,
+          }}
+        >
           <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={require("./pp.png")}
-                alt="First slide"
-              />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>
-                  Nulla vitae elit libero, a pharetra augue mollis interdum.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={require("./pp.png")}
-                alt="Second slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={require("./pp.png")}
-                alt="Third slide"
-              />
-
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
+            <img src={require("./s2.png")} alt="placeholder" />
+            <img src={require("./s1.png")} alt="placeholder" />
+            <img src={require("./s3.png")} alt="placeholder" />
+            <img src={require("./s2.png")} alt="placeholder" />
+            <img src={require("./s1.png")} alt="placeholder" />
+            <img src={require("./s3.png")} alt="placeholder" />
+            <img src={require("./s2.png")} alt="placeholder" />
+            <img src={require("./s1.png")} alt="placeholder" />
+            <img src={require("./s3.png")} alt="placeholder" />
           </Carousel>
+        </div>
+        <Container
+          className="d-flex bg-black flex-row my-5 px-5"
+          style={{ borderRadius: `15px` }}
+        >
+          <Col lg="7" md="7">
+            <p
+              style={{
+                paddingTop: `50px`,
+                color: `white`,
+                fontSize: `2em`,
+                fontWeight: 700,
+              }}
+            >
+              Book a call with me
+            </p>
+            <p
+              style={{
+                paddingTop: `20px`,
+                color: `lightgray`,
+                fontSize: `1.1em`,
+                fontWeight: 500,
+                paddingBottom: `50px`,
+              }}
+            >
+              I'd love to have a chat to see how I can help you. The best first
+              step is for us to discuss your project during a free consultation.
+              Then we can move forward from there.
+            </p>
+          </Col>
+
+          <Container className="d-flex justify-content-center align-items-center ms-4">
+            <Button
+              className="px-4 py-2 ms-5"
+              style={{
+                border: `transparent`,
+                borderRadius: 50,
+                backgroundColor: `rgb(232,117,99)`,
+              }}
+            >
+              Free Consultation
+            </Button>
+          </Container>
+        </Container>
+        <Container className="d-flex flex-row m-0">
+          <Button
+            className="bg-black "
+            style={{ borderRadius: 0, width: `50px`, height: 50 + `px` }}
+          >
+            <FontAwesomeIcon size="xl" icon={faCircle} />
+          </Button>
+          <Container className="d-flex justify-content-end p-0 m-0">
+            <Button
+              className="bg-black py-2 px-4 mx-0"
+              style={{ borderRadius: 50 }}
+            >
+              Free Consultation
+            </Button>
+          </Container>
         </Container>
       </body>
     </div>
