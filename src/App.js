@@ -157,7 +157,7 @@ function App() {
         </Container>
         <Container className="d-flex flex-row py-5">
           <Container className="d-flex">
-            <img src={require("./pp.png")} alt="" />
+            <img src={require("./images/pp.png")} alt="" />
           </Container>
           <Container className="d-flex py-3">
             <Stack>
@@ -200,15 +200,15 @@ function App() {
           }}
         >
           <Carousel>
-            <img src={require("./s2.png")} alt="placeholder" />
-            <img src={require("./s1.png")} alt="placeholder" />
-            <img src={require("./s3.png")} alt="placeholder" />
-            <img src={require("./s2.png")} alt="placeholder" />
-            <img src={require("./s1.png")} alt="placeholder" />
-            <img src={require("./s3.png")} alt="placeholder" />
-            <img src={require("./s2.png")} alt="placeholder" />
-            <img src={require("./s1.png")} alt="placeholder" />
-            <img src={require("./s3.png")} alt="placeholder" />
+            <img src={require("./images/s2.png")} alt="placeholder" />
+            <img src={require("./images/s1.png")} alt="placeholder" />
+            <img src={require("./images/s3.png")} alt="placeholder" />
+            <img src={require("./images/s2.png")} alt="placeholder" />
+            <img src={require("./images/s1.png")} alt="placeholder" />
+            <img src={require("./images/s3.png")} alt="placeholder" />
+            <img src={require("./images/s2.png")} alt="placeholder" />
+            <img src={require("./images/s1.png")} alt="placeholder" />
+            <img src={require("./images/s3.png")} alt="placeholder" />
           </Carousel>
         </div>
         <Container
