@@ -19,7 +19,6 @@ const Carousel = (props) => {
   const next = () => {
     if (currentIndex < length - 1) {
       setCurrenttranslate(currenttranslate - 40);
-      console.log(currenttranslate);
       setCurrentIndex((prevState) => prevState + 1);
     }
   };
